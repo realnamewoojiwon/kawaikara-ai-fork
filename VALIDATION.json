@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-02T15:05:12.252Z",
-  "version": "2.3.1-ai.1",
+  "checkedAt": "2026-10-02T15:32:21.864Z",
+  "version": "2.3.1-ai.2",
   "result": "PASS_WITH_DOCUMENTED_LIMITATIONS",
   "runtime": {
     "electron": "43.5.0",
@@ -234,7 +234,12 @@
   },
   "sourceRebuild": {
     "success": true,
-    "identicalOwnModules": 54
+    "identicalOwnModules": 54,
+    "functionalTestVersion": "2.3.1-ai.1",
+    "changesSinceFunctionalTest": [
+      "Application version",
+      "Restored original executable icon"
+    ]
   },
   "originalIconPreserved": true,
   "originalRuntimeSignaturePreserved": true,
@@ -251,12 +256,42 @@
     "Authenticated/paid playback, production VMP certification, 4K, HDCP, and long-duration stability remain unverified.",
     "No security review can prove the complete absence of malware or future vulnerabilities."
   ],
+  "currentVersionStartup": {
+    "result": "PASS",
+    "checkedAt": "2026-10-02T15:28:20.804Z",
+    "version": "2.3.1-ai.2",
+    "electron": "43.5.0",
+    "chromium": "150.0.7871.250",
+    "windows": [
+      {
+        "sandbox": true,
+        "contextIsolation": true,
+        "nodeIntegration": false
+      }
+    ],
+    "profile": "separate-empty-test-profile",
+    "localLogos": 16,
+    "originalExecutableIconMatches": true,
+    "originalExecutableIconPixelsSHA256": "6601b5959567737459d10f799dc179bb8a8eb27ca30c29b28eb67da49676c140",
+    "servicePlaybackAttempted": false
+  },
+  "portableLauncher": {
+    "result": "PASS",
+    "checkedAt": "2026-10-02T15:31:54.8361815Z",
+    "launchMethod": "Extracted release ZIP and ran Kawaikara AI fork.exe",
+    "mainWindowTitle": "Kawaikara AI fork",
+    "profile": "separate-empty-test-profile",
+    "privateProfileIncluded": false
+  },
   "antivirus": {
     "scanner": "Microsoft Defender",
     "file": "Kawaikara-AI-fork-win-x64.zip",
-    "sha256": "b41541f99f7a0cc85f0bd1a4086f24eda26461eda6f261f95b7fa2358c984535",
+    "sha256": "51b587236c16acb0ccc8c9b3f2dd23e511a1f255a3c774ff03f9c34cf6ed4084",
+    "checkedAt": "2026-10-02T15:30:52.1139346Z",
     "result": "NO_THREATS_FOUND",
     "exitCode": 0,
-    "signatureVersion": "1.459.516.0"
+    "signatureVersion": "1.459.516.0",
+    "antivirusEnabled": true,
+    "realTimeProtectionEnabled": true
   }
 }

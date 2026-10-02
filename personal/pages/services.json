@@ -1,0 +1,130 @@
+[
+  {
+    "id": "youtube",
+    "name": "유튜브",
+    "group": "영상·방송",
+    "tag": "YT",
+    "url": "https://www.youtube.com/",
+    "logo": "logos/youtube.ico"
+  },
+  {
+    "id": "chzzk",
+    "name": "치지직",
+    "group": "영상·방송",
+    "tag": "CH",
+    "url": "https://chzzk.naver.com/",
+    "logo": "logos/chzzk.ico"
+  },
+  {
+    "id": "twitch",
+    "name": "트위치",
+    "group": "영상·방송",
+    "tag": "TW",
+    "url": "https://www.twitch.tv/",
+    "logo": "logos/twitch.ico"
+  },
+  {
+    "id": "netflix",
+    "name": "넷플릭스",
+    "group": "OTT",
+    "tag": "N",
+    "url": "https://www.netflix.com/",
+    "logo": "logos/netflix.ico"
+  },
+  {
+    "id": "laftel",
+    "name": "라프텔",
+    "group": "OTT",
+    "tag": "L",
+    "url": "https://laftel.net/",
+    "logo": "logos/laftel.ico"
+  },
+  {
+    "id": "disneyplus",
+    "name": "디즈니+",
+    "group": "OTT",
+    "tag": "D+",
+    "url": "https://www.disneyplus.com/",
+    "logo": "logos/disneyplus.ico"
+  },
+  {
+    "id": "amazonprime",
+    "name": "프라임 비디오",
+    "group": "OTT",
+    "tag": "PV",
+    "url": "https://www.primevideo.com/",
+    "logo": "logos/amazonprime.ico"
+  },
+  {
+    "id": "wavve",
+    "name": "웨이브",
+    "group": "OTT",
+    "tag": "W",
+    "url": "https://www.wavve.com/",
+    "logo": "logos/wavve.ico"
+  },
+  {
+    "id": "watcha",
+    "name": "왓챠",
+    "group": "OTT",
+    "tag": "WA",
+    "url": "https://watcha.com/",
+    "logo": "logos/watcha.ico"
+  },
+  {
+    "id": "coupangplay",
+    "name": "쿠팡플레이",
+    "group": "OTT",
+    "tag": "CP",
+    "url": "https://www.coupangplay.com/",
+    "logo": "logos/coupangplay.ico"
+  },
+  {
+    "id": "tving",
+    "name": "티빙",
+    "group": "OTT",
+    "tag": "TV",
+    "url": "https://www.tving.com/",
+    "logo": "logos/tving.jpg"
+  },
+  {
+    "id": "appletv",
+    "name": "Apple TV",
+    "group": "OTT",
+    "tag": "A",
+    "url": "https://tv.apple.com/",
+    "logo": "logos/appletv.png"
+  },
+  {
+    "id": "youtubemusic",
+    "name": "유튜브 뮤직",
+    "group": "음악·책",
+    "tag": "YM",
+    "url": "https://music.youtube.com/",
+    "logo": "logos/youtubemusic.ico"
+  },
+  {
+    "id": "applemusic",
+    "name": "Apple Music",
+    "group": "음악·책",
+    "tag": "AM",
+    "url": "https://music.apple.com/",
+    "logo": "logos/applemusic.ico"
+  },
+  {
+    "id": "spotify",
+    "name": "스포티파이",
+    "group": "음악·책",
+    "tag": "SP",
+    "url": "https://open.spotify.com/",
+    "logo": "logos/spotify.ico"
+  },
+  {
+    "id": "ridibooks",
+    "name": "리디",
+    "group": "음악·책",
+    "tag": "R",
+    "url": "https://ridibooks.com/",
+    "logo": "logos/ridibooks.ico"
+  }
+]

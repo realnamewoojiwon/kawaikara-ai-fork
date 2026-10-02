@@ -1,0 +1,262 @@
+{
+  "checkedAt": "2026-10-02T15:05:12.252Z",
+  "version": "2.3.1-ai.1",
+  "result": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+  "runtime": {
+    "electron": "43.5.0",
+    "chromium": "150.0.7871.250"
+  },
+  "checks": [
+    {
+      "name": "Startup and sandboxed windows",
+      "status": "PASS"
+    },
+    {
+      "name": "16 locally bundled service logos",
+      "status": "PASS"
+    },
+    {
+      "name": "Correct brand and Crunchyroll removal",
+      "status": "PASS"
+    },
+    {
+      "name": "F11 enters and restores fullscreen",
+      "status": "PASS"
+    },
+    {
+      "name": "Alt+Enter no longer activates fullscreen",
+      "status": "PASS"
+    },
+    {
+      "name": "Tab keeps ordinary focus and does not open service menu",
+      "status": "PASS"
+    },
+    {
+      "name": "Menu button remains usable",
+      "status": "PASS"
+    },
+    {
+      "name": "IPC sender, frame, unsafe-link and command-execution protections",
+      "status": "PASS"
+    },
+    {
+      "name": "Unrelated website has no application or Node access",
+      "status": "PASS"
+    }
+  ],
+  "services": [
+    {
+      "id": "youtube",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.youtube.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "chzzk",
+      "status": "PAGE_OPENED",
+      "origin": "https://chzzk.naver.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "twitch",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.twitch.tv",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "netflix",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.netflix.com",
+      "applicationAccess": {
+        "type": "object",
+        "keys": [
+          "custom"
+        ],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "laftel",
+      "status": "PAGE_OPENED",
+      "origin": "https://laftel.net",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "disneyplus",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.disneyplus.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "amazonprime",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.primevideo.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "wavve",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.wavve.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "watcha",
+      "status": "PAGE_OPENED",
+      "origin": "https://watcha.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "coupangplay",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.coupangplay.com",
+      "applicationAccess": {
+        "type": "object",
+        "keys": [
+          "custom"
+        ],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "tving",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.tving.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "appletv",
+      "status": "PAGE_OPENED",
+      "origin": "https://tv.apple.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "youtubemusic",
+      "status": "PAGE_OPENED",
+      "origin": "https://www.youtube.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "applemusic",
+      "status": "PAGE_OPENED",
+      "origin": "https://music.apple.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "spotify",
+      "status": "PAGE_OPENED",
+      "origin": "https://open.spotify.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "id": "ridibooks",
+      "status": "PAGE_OPENED",
+      "origin": "https://ridibooks.com",
+      "applicationAccess": {
+        "type": "undefined",
+        "keys": [],
+        "personal": "undefined",
+        "node": "undefined"
+      }
+    }
+  ],
+  "media": {
+    "localH264AAC": true,
+    "widevineAccess": true,
+    "widevineKeys": true,
+    "productionLicenseTested": false
+  },
+  "sourceRebuild": {
+    "success": true,
+    "identicalOwnModules": 54
+  },
+  "originalIconPreserved": true,
+  "originalRuntimeSignaturePreserved": true,
+  "productionDependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "limitations": [
+    "Tests used empty app profiles and blocked service media.",
+    "No Coupang Play, Tving, or Chzzk playback was attempted.",
+    "Authenticated/paid playback, production VMP certification, 4K, HDCP, and long-duration stability remain unverified.",
+    "No security review can prove the complete absence of malware or future vulnerabilities."
+  ],
+  "antivirus": {
+    "scanner": "Microsoft Defender",
+    "file": "Kawaikara-AI-fork-win-x64.zip",
+    "sha256": "b41541f99f7a0cc85f0bd1a4086f24eda26461eda6f261f95b7fa2358c984535",
+    "result": "NO_THREATS_FOUND",
+    "exitCode": 0,
+    "signatureVersion": "1.459.516.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "kawaikara-ai-fork",
+  "productName": "Kawaikara AI fork",
+  "version": "2.3.1-ai.1",
+  "private": true,
+  "license": "MIT",
+  "description": "Personal streaming viewer with restricted website permissions",
+  "dependencies": {
+    "patchright": "1.57.0",
+    "electron-log": "5.4.3",
+    "lodash": "4.18.1",
+    "reflect-metadata": "0.2.2",
+    "chokidar": "4.0.3"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node tests/security.cjs"
+  },
+  "devDependencies": {
+    "@electron/asar": "4.3.1",
+    "typescript": "5.7.3",
+    "adm-zip": "0.5.16"
+  }
+}

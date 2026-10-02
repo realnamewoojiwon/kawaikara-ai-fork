@@ -1,0 +1,87 @@
+{
+    "preference": {
+        "general": {
+            "name": "General",
+            "dark_mode": { "name": "Dark Mode" },
+            "default_main": {
+                "name": "Default Main Page",
+                "url": { "name": "Main Page" }
+            },
+            "enable_autoupdate": { "name": "Enable Autoupdate" },
+            "render_full_size_when_pip_running": {
+                "name": "render when pip running"
+            },
+            "window_preference": {
+                "pip_location": {
+                    "location": { "name": "PiP Position" },
+                    "monitor": { "name": "PiP Monitor Position" }
+                },
+                "pip_window_size": {
+                    "name": "PiP Window Size",
+                    "x": { "name": "X" },
+                    "y": { "name": "Y" },
+                    "width": { "name": "Width" },
+                    "height": { "name": "Height" }
+                }
+            }
+        },
+        "locale": {
+            "name": "Locale",
+            "selected_locale": { "name": "Selected Locale" }
+        },
+        "shortcut": {
+            "name": "Shortcut",
+            "goto_netflix": { "name": "netflix" },
+            "goto_laftel": { "name": "lafel" },
+            "goto_youtube": { "name": "youtube" },
+            "goto_disney": { "name": "disney" },
+            "goto_wavve": { "name": "wavve" },
+            "goto_tving": { "name": "tving" },
+            "goto_twitch": { "name": "twitch" },
+            "run_pip": { "name": "run pip" },
+            "run_always_on_top" : {"name" : "run always on top"},
+            "goto_applemusic": { "name": "apple music" },
+            "goto_chzzk": { "name": "chzzk" },
+            "goto_amazonprime": { "name": "amazon prime" },
+            "goto_crunchyroll": { "name": "Crunchyroll" },
+            "goto_appletv": { "name": "Apple TV" },
+            "goto_spotify": { "name": "Spotify" },
+            "goto_youtubemusic": { "name": "Youtube Music" }
+        }
+    },
+    "version": { "name": "version" },
+    "locale_meta": {
+        "filename": "EN",
+        "metaname": "English",
+        "version": "2.0.0"
+    },
+    "system_literal": {
+        "menu_main": "Kawai Main",
+        "menu_netflix": "Netflix",
+        "menu_laftel": "Laftel",
+        "menu_disney": "Disney plus",
+        "menu_youtube": "Youtube",
+        "menu_amazonprime": "Amazonprime",
+        "menu_wavve": "Wavve",
+        "menu_watcha": "Watcha",
+        "menu_coupangplay": "Coupang Play",
+        "menu_tving": "Tving",
+        "menu_applemusic": "Apple Music",
+        "menu_chzzk": "Chzzk",
+        "menu_twitch": "Twitch",
+        "menu_info": "Info",
+        "menu_preference": "Preference",
+        "menu_checkupdate": "Update Check",
+        "menu_github": "Github",
+        "menu_discord": "Discord",
+        "menu_crunchyroll": "Crunchyroll",        
+        "menu_appletv": "appleTV",
+        "menu_youtubemusic" : "youtubeMusic",
+        "menu_spotify" : "Spotify",
+        "menu_opendownloaddirectory" : "Download directory",
+        "menu_bgtaskview" : "background Task View",
+        "menu_alwaysontop" : "run always on top",
+        "menu_devconsole" : "Open dev console"
+
+    }
+}

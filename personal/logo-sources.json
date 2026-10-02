@@ -1,0 +1,114 @@
+[
+  {
+    "id": "youtube",
+    "filename": "youtube.ico",
+    "source": "https://www.youtube.com/favicon.ico",
+    "sha256": "8bb1d0fa43a17436d59dd546f6f74c76dc44735def7522c22d8031166db8911d",
+    "bytes": 1150
+  },
+  {
+    "id": "chzzk",
+    "filename": "chzzk.ico",
+    "source": "https://chzzk.naver.com/favicon.ico",
+    "sha256": "f214bd972727522415e03d8579ecc507bd3fe8ac8560f21daf069b1e4de35bfa",
+    "bytes": 4286
+  },
+  {
+    "id": "twitch",
+    "filename": "twitch.ico",
+    "source": "https://www.twitch.tv/favicon.ico",
+    "sha256": "451309e9f1bf7cf9bff43b0de54df290a4d74149a43f3ad483dde8f865e63a51",
+    "bytes": 4286
+  },
+  {
+    "id": "netflix",
+    "filename": "netflix.ico",
+    "source": "https://www.netflix.com/favicon.ico",
+    "sha256": "abe8012eb65c0dc0ac3e87dcc1e60e1908ebd8f12b7c47a5df1856f7a7bb1edd",
+    "bytes": 16958
+  },
+  {
+    "id": "laftel",
+    "filename": "laftel.ico",
+    "source": "https://static.laftel.net/favicon.ico",
+    "sha256": "2a63ea5937b943e2ca521e84f6d8ef9f65c62e092cd2fc5a50faefd6f4114151",
+    "bytes": 15406
+  },
+  {
+    "id": "disneyplus",
+    "filename": "disneyplus.ico",
+    "source": "https://www.disneyplus.com/favicon.ico",
+    "sha256": "9ed7d0dea2d3bdf1e60430939e9d99e5f8cdfec196def106c56c486b4d743e21",
+    "bytes": 9662
+  },
+  {
+    "id": "amazonprime",
+    "filename": "amazonprime.ico",
+    "source": "https://www.primevideo.com/favicon.ico",
+    "sha256": "be49c84879168dead59c66fa0777e1307bd2ab889a9600c497f64c7428bc3c81",
+    "bytes": 1150
+  },
+  {
+    "id": "wavve",
+    "filename": "wavve.ico",
+    "source": "https://www.wavve.com/favicon.ico",
+    "sha256": "f0e188774c197fa8d5b5afa44e4e80aa7cf3b4f5f00597009a7a803fd90958d9",
+    "bytes": 7193
+  },
+  {
+    "id": "watcha",
+    "filename": "watcha.ico",
+    "source": "https://watcha.com/favicon.ico",
+    "sha256": "8369850b7cf02e0e906bae1cbb9f826d5ab7f38520961598d3d1d12537f16cd2",
+    "bytes": 9918
+  },
+  {
+    "id": "coupangplay",
+    "filename": "coupangplay.ico",
+    "source": "https://www.coupangplay.com/favicon.ico",
+    "sha256": "14dcdec7c5607ecaeaee62148fc4bb90d560b2d1dd81b3d7ab5a395146254839",
+    "bytes": 15406
+  },
+  {
+    "id": "tving",
+    "filename": "tving.jpg",
+    "source": "https://www.tving.com/favicon.ico",
+    "sha256": "bd631daa7ad07d2874627e46ed2fa84fd35cb7e2c463529a9a11b6a169f3e752",
+    "bytes": 2671
+  },
+  {
+    "id": "appletv",
+    "filename": "appletv.png",
+    "source": "https://tv.apple.com/favicon.ico",
+    "sha256": "7d57afb682fc0257e26ceb63aced547be5a84982f44c7e86d8ae8099fac4228c",
+    "bytes": 647
+  },
+  {
+    "id": "youtubemusic",
+    "filename": "youtubemusic.ico",
+    "source": "https://music.youtube.com/favicon.ico",
+    "sha256": "23c6c677241d9f4a83488190f2502bd85255842be95ef810f2aece4f31404ae6",
+    "bytes": 1150
+  },
+  {
+    "id": "applemusic",
+    "filename": "applemusic.ico",
+    "source": "https://music.apple.com/favicon.ico",
+    "sha256": "22046efc9c8c8666c659faeb164ce764ba15c37a905e2f87ebcda79665f1b122",
+    "bytes": 12014
+  },
+  {
+    "id": "spotify",
+    "filename": "spotify.ico",
+    "source": "https://open.spotify.com/favicon.ico",
+    "sha256": "0f31d2eacc14d9e4ff0462210d15547cbe67935d32713b8605629f0f6cf5f378",
+    "bytes": 15086
+  },
+  {
+    "id": "ridibooks",
+    "filename": "ridibooks.ico",
+    "source": "https://ridibooks.com/favicon.ico",
+    "sha256": "4cc3c7dc8476b6df49d57bf79ae905fb110ec1dca976a858b27dde18747a3914",
+    "bytes": 9662
+  }
+]

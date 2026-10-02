@@ -1,0 +1,14 @@
+/node_modules/
+/build/
+/dist/
+/work/
+/outputs/
+/data/
+/logs/
+/external-login/
+.env*
+*.pfx
+*.p12
+*.pem
+*.key
+*.zip

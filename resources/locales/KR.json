@@ -1,0 +1,86 @@
+{
+    "preference": {
+        "general": {
+            "name": "일반",
+            "dark_mode": { "name": "다크모드" },
+            "default_main": {
+                "name": "홈",
+                "url": { "name": "홈" }
+            },
+            "enable_autoupdate": { "name": "자동 업데이트 활성화" },
+            "render_full_size_when_pip_running": {
+                "name": "render when pip running"
+            },
+            "window_preference": {
+                "pip_location": {
+                    "location": { "name": "PiP 위치" },
+                    "monitor": { "name": "PiP 모니터 위치" }
+                },
+                "pip_window_size": {
+                    "name": "PiP 윈도우 사이즈",
+                    "x": { "name": "X" },
+                    "y": { "name": "Y" },
+                    "width": { "name": "너비" },
+                    "height": { "name": "높이" }
+                }
+            }
+        },
+        "locale": {
+            "name": "언어",
+            "selected_locale": { "name": "언어 선택" }
+        },
+        "shortcut": {
+            "name": "단축키",
+            "goto_netflix": { "name": "넷플릭스" },
+            "goto_laftel": { "name": "라프텔" },
+            "goto_youtube": { "name": "유튜브" },
+            "goto_disney": { "name": "디즈니 플러스" },
+            "goto_wavve": { "name": "웨이브" },
+            "goto_tving": { "name": "티빙" },
+            "goto_twitch": { "name": "트위치" },
+            "run_pip": { "name": "PiP 실행" },
+            "run_always_on_top": { "name": "always on top 실행" },
+            "goto_applemusic": { "name": "애플 뮤직" },
+            "goto_chzzk": { "name": "치지직" },
+            "goto_amazonprime": { "name": "아마존 프라임" },
+            "goto_crunchyroll": { "name": "크런치롤" },
+            "goto_appletv": { "name": "애플티비" },
+            "goto_spotify": { "name": "스포티파이" },
+            "goto_youtubemusic": { "name": "유튜브뮤직" }
+        }
+    },
+    "version": { "name": "버전" },
+    "locale_meta": {
+        "filename": "KR",
+        "metaname": "한국어",
+        "version": "2.0.0"
+    },
+    "system_literal": {
+        "menu_main": "홈",
+        "menu_netflix": "넷플릭스",
+        "menu_laftel": "라프텔",
+        "menu_disney": "디즈니 플러스",
+        "menu_youtube": "유튜브",
+        "menu_amazonprime": "아마존 프라임",
+        "menu_wavve": "웨이브",
+        "menu_watcha": "왓차",
+        "menu_coupangplay": "쿠팡 플레이",
+        "menu_tving": "티빙",
+        "menu_applemusic": "애플 뮤직",
+        "menu_chzzk": "치지직",
+        "menu_twitch": "트위치",
+        "menu_info": "앱 정보",
+        "menu_preference": "설정",
+        "menu_checkupdate": "업데이트 체크",
+        "menu_github": "깃허브",
+        "menu_discord": "디스코드",
+        "menu_crunchyroll": "크런치롤",
+        "menu_appletv": "애플티비",
+        "menu_youtubemusic": "유튜브 뮤직",
+        "menu_spotify": "스포티파이",
+        "menu_opendownloaddirectory": "다운로드 폴더",
+        "menu_bgtaskview": "백그라운드 작업",
+        "menu_alwaysontop": "always on top 실행",
+        "menu_devconsole": "개발 콘솔 열기"
+    }
+}

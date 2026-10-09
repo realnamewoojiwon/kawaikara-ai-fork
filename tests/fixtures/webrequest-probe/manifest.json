@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Kawaikara WebRequest Compatibility Probe",
+  "version": "1.0.0",
+  "description": "Local release verification fixture. Cancels only a test request on example.com.",
+  "permissions": ["webRequest", "webRequestBlocking", "https://example.com/*"],
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [{
+    "matches": ["https://example.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}

@@ -28,6 +28,7 @@ function managers() {
   };
 }
 let mainWindow;
+const extensionManager = new (require('./extensions.cjs').ExtensionManager)(dataDir, () => mainWindow);
 let failedURL;
 const installedWindows = new WeakSet();
 
@@ -41,7 +42,8 @@ ipcMain.handle('personal:action', async (event, action, id) => {
     const site = services.find(s => s.id === id);
     if (!site) throw new Error('Unknown service');
     await shell.openExternal(site.url);
-  } else if (action === 'menu') managers().view.openMenu();
+  } else if (action === 'extensions') await extensionManager.openManager();
+  else if (action === 'menu') managers().view.openMenu();
   else if (action === 'home') await managers().view.loadUrl('main');
   else if (action === 'retry' && failedURL && mainWindow) await mainWindow.loadURL(failedURL);
   else if (action === 'browser-current') await openCurrentInBrowser();
@@ -76,7 +78,8 @@ function installMainWindow(window) {
     managers().log.error('Renderer stopped:', detail.reason);
     if (!window.isDestroyed()) managers().view.loadUrl('main').catch(error => managers().log.error(error));
   });
-  window.webContents.once('did-finish-load', () => {
+  const refreshMenu = () => {
+    if (window.isDestroyed()) return;
     const choose = id => () => managers().view.loadUrl(id).catch(error => managers().log.error(error));
     const menu = Menu.buildFromTemplate([
       { label: '서비스', submenu: services.map(s => ({ label: s.name, click: choose(s.id) })) },
@@ -88,6 +91,12 @@ function installMainWindow(window) {
         { label: '전체화면', accelerator: 'F11', click: () => managers().view.fullscreen() },
         { label: '항상 위에 표시', click: () => managers().view.alwaysOnTopMode() },
       ] },
+      { label: '확장 프로그램', submenu: [
+        { label: '확장 프로그램 관리…', click: () => extensionManager.openManager().catch(error => managers().log.error(error)) },
+        ...extensionManager.list().items.filter(item => item.loaded && item.popup).map(item => ({
+          label: item.name, click: () => extensionManager.openPage(item.token, 'popup').catch(error => managers().log.error(error)),
+        })),
+      ] },
       { label: '도움', submenu: [
         { label: '현재 서비스를 기본 브라우저에서 열기', click: () => openCurrentInBrowser().catch(error => managers().log.error(error)) },
         { label: '프로그램 종료', role: 'quit' },
@@ -97,9 +106,12 @@ function installMainWindow(window) {
     window.setMenuBarVisibility(true);
     window.setAutoHideMenuBar(false);
     window.setTitle('Kawaikara AI fork');
-  });
+  };
+  window.webContents.once('did-finish-load', refreshMenu);
+  extensionManager.on('changed', refreshMenu);
+  window.once('closed', () => extensionManager.removeListener('changed', refreshMenu));
 }
-module.exports = { installMainWindow };
+module.exports = { installMainWindow, extensionManager };
 app.on('second-instance', () => {
   const window = mainWindow || BrowserWindow.getAllWindows()[0];
   if (window) { if (window.isMinimized()) window.restore(); window.show(); window.focus(); }

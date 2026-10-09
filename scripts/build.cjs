@@ -23,7 +23,7 @@ function copyPackage(name,from,targetParent){const src=folder(name,from),dest=pa
  fs.cpSync(path.join(root,'ui'),path.join(staging,'public/pages'),{recursive:true});
  for(const input of walk(path.join(root,'typescript_src')).filter(f=>f.endsWith('.ts')&&!f.endsWith('.d.ts')))compile(input,path.join(staging,'public',path.relative(path.join(root,'typescript_src'),input).replace(/\.ts$/,'.js')));
  fs.cpSync(path.join(root,'personal/pages'),path.join(staging,'public/pages'),{recursive:true});
- for(const file of ['bootstrap.cjs','security.cjs'])fs.copyFileSync(path.join(root,'personal',file),path.join(staging,'public',file));
+ for(const file of ['bootstrap.cjs','security.cjs','extensions.cjs','extensions-preload.cjs'])fs.copyFileSync(path.join(root,'personal',file),path.join(staging,'public',file));
  const sourcePkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'))),pkg={...sourcePkg,main:'public/bootstrap.cjs'};delete pkg.devDependencies;delete pkg.scripts;
  for(const name of Object.keys(pkg.dependencies))copyPackage(name,root,path.join(staging,'node_modules'));
  fs.writeFileSync(path.join(staging,'package.json'),JSON.stringify(pkg,null,2));fs.copyFileSync(path.join(root,'LICENSE'),path.join(staging,'LICENSE'));

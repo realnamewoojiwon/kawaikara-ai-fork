@@ -1,12 +1,66 @@
 {
-  "checkedAt": "2026-10-02T15:32:21.864Z",
-  "version": "2.3.1-ai.2",
+  "version": "2.3.1-ai.3",
+  "checkedAt": "2026-10-09T11:33:34.027Z",
   "result": "PASS_WITH_DOCUMENTED_LIMITATIONS",
   "runtime": {
     "electron": "43.5.0",
     "chromium": "150.0.7871.250"
   },
-  "checks": [
+  "extensionChecks": [
+    {
+      "name": "Startup, 16 services and original home logos",
+      "status": "PASS"
+    },
+    {
+      "name": "F11, Alt+Enter removal and normal Tab",
+      "status": "PASS"
+    },
+    {
+      "name": "Extension manager IPC gates and separate session",
+      "status": "PASS"
+    },
+    {
+      "name": "Native folder and permission confirmation, import and path validation",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual MV3 page injection, worker messages, storage and remote isolation",
+      "status": "PASS"
+    },
+    {
+      "name": "Popup and options run in sandbox without application preload",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate import rejected before disturbing loaded extension",
+      "status": "PASS"
+    },
+    {
+      "name": "Disable, enable and reload change actual script execution after navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid manifest fails without altering existing extension",
+      "status": "PASS"
+    },
+    {
+      "name": "Enabled extensions restored before first navigation after restart",
+      "status": "PASS"
+    },
+    {
+      "name": "Portable profile move preserves extension ID and storage",
+      "status": "PASS"
+    },
+    {
+      "name": "Remove unloads extension and deletes only the private copy",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual chrome.webRequest extension cancels a test network request",
+      "status": "PASS"
+    }
+  ],
+  "regressionChecks": [
     {
       "name": "Startup and sandboxed windows",
       "status": "PASS"
@@ -48,182 +102,82 @@
     {
       "id": "youtube",
       "status": "PAGE_OPENED",
-      "origin": "https://www.youtube.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.youtube.com"
     },
     {
       "id": "chzzk",
       "status": "PAGE_OPENED",
-      "origin": "https://chzzk.naver.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://chzzk.naver.com"
     },
     {
       "id": "twitch",
       "status": "PAGE_OPENED",
-      "origin": "https://www.twitch.tv",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.twitch.tv"
     },
     {
       "id": "netflix",
       "status": "PAGE_OPENED",
-      "origin": "https://www.netflix.com",
-      "applicationAccess": {
-        "type": "object",
-        "keys": [
-          "custom"
-        ],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.netflix.com"
     },
     {
       "id": "laftel",
       "status": "PAGE_OPENED",
-      "origin": "https://laftel.net",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://laftel.net"
     },
     {
       "id": "disneyplus",
       "status": "PAGE_OPENED",
-      "origin": "https://www.disneyplus.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.disneyplus.com"
     },
     {
       "id": "amazonprime",
       "status": "PAGE_OPENED",
-      "origin": "https://www.primevideo.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.primevideo.com"
     },
     {
       "id": "wavve",
       "status": "PAGE_OPENED",
-      "origin": "https://www.wavve.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.wavve.com"
     },
     {
       "id": "watcha",
       "status": "PAGE_OPENED",
-      "origin": "https://watcha.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://watcha.com"
     },
     {
       "id": "coupangplay",
       "status": "PAGE_OPENED",
-      "origin": "https://www.coupangplay.com",
-      "applicationAccess": {
-        "type": "object",
-        "keys": [
-          "custom"
-        ],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.coupangplay.com"
     },
     {
       "id": "tving",
       "status": "PAGE_OPENED",
-      "origin": "https://www.tving.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.tving.com"
     },
     {
       "id": "appletv",
       "status": "PAGE_OPENED",
-      "origin": "https://tv.apple.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://tv.apple.com"
     },
     {
       "id": "youtubemusic",
       "status": "PAGE_OPENED",
-      "origin": "https://www.youtube.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://www.youtube.com"
     },
     {
       "id": "applemusic",
       "status": "PAGE_OPENED",
-      "origin": "https://music.apple.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://music.apple.com"
     },
     {
       "id": "spotify",
       "status": "PAGE_OPENED",
-      "origin": "https://open.spotify.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://open.spotify.com"
     },
     {
       "id": "ridibooks",
       "status": "PAGE_OPENED",
-      "origin": "https://ridibooks.com",
-      "applicationAccess": {
-        "type": "undefined",
-        "keys": [],
-        "personal": "undefined",
-        "node": "undefined"
-      }
+      "origin": "https://ridibooks.com"
     }
   ],
   "media": {
@@ -232,15 +186,7 @@
     "widevineKeys": true,
     "productionLicenseTested": false
   },
-  "sourceRebuild": {
-    "success": true,
-    "identicalOwnModules": 54,
-    "functionalTestVersion": "2.3.1-ai.1",
-    "changesSinceFunctionalTest": [
-      "Application version",
-      "Restored original executable icon"
-    ]
-  },
+  "sourceBuild": true,
   "originalIconPreserved": true,
   "originalRuntimeSignaturePreserved": true,
   "productionDependencyAudit": {
@@ -251,47 +197,27 @@
     "critical": 0
   },
   "limitations": [
-    "Tests used empty app profiles and blocked service media.",
-    "No Coupang Play, Tving, or Chzzk playback was attempted.",
-    "Authenticated/paid playback, production VMP certification, 4K, HDCP, and long-duration stability remain unverified.",
-    "No security review can prove the complete absence of malware or future vulnerabilities."
+    "Chrome extension APIs are partially supported; loading is not a full compatibility guarantee.",
+    "Chrome Web Store installation, CRX direct loading, automatic extension updates, Chrome sync and dynamic action-click APIs are not supported.",
+    "Network extension handlers can conflict while CoupangPlay is selected; the service hook is removed on switching away.",
+    "Tests used own trusted fixtures and empty profiles. No paid videos were played.",
+    "Authenticated/paid playback, production VMP certification, screen sharing, ShadowPlay and long-duration stability are not newly verified."
   ],
-  "currentVersionStartup": {
-    "result": "PASS",
-    "checkedAt": "2026-10-02T15:28:20.804Z",
-    "version": "2.3.1-ai.2",
-    "electron": "43.5.0",
-    "chromium": "150.0.7871.250",
-    "windows": [
-      {
-        "sandbox": true,
-        "contextIsolation": true,
-        "nodeIntegration": false
-      }
-    ],
-    "profile": "separate-empty-test-profile",
-    "localLogos": 16,
-    "originalExecutableIconMatches": true,
-    "originalExecutableIconPixelsSHA256": "6601b5959567737459d10f799dc179bb8a8eb27ca30c29b28eb67da49676c140",
-    "servicePlaybackAttempted": false
-  },
-  "portableLauncher": {
-    "result": "PASS",
-    "checkedAt": "2026-10-02T15:31:54.8361815Z",
-    "launchMethod": "Extracted release ZIP and ran Kawaikara AI fork.exe",
-    "mainWindowTitle": "Kawaikara AI fork",
-    "profile": "separate-empty-test-profile",
-    "privateProfileIncluded": false
-  },
   "antivirus": {
     "scanner": "Microsoft Defender",
     "file": "Kawaikara-AI-fork-win-x64.zip",
-    "sha256": "51b587236c16acb0ccc8c9b3f2dd23e511a1f255a3c774ff03f9c34cf6ed4084",
-    "checkedAt": "2026-10-02T15:30:52.1139346Z",
+    "sha256": "31bf273caa12d839062eddd5a0b622e5722e99815ca6dc9c9ad339853c7e4840",
+    "checkedAt": "2026-10-09T11:33:33.352Z",
     "result": "NO_THREATS_FOUND",
-    "exitCode": 0,
-    "signatureVersion": "1.459.516.0",
-    "antivirusEnabled": true,
-    "realTimeProtectionEnabled": true
+    "exitCode": 0
+  },
+  "portableLauncher": {
+    "launchMethod": "Extracted release ZIP and ran Kawaikara AI fork.exe",
+    "profile": "freshly-created-empty-profile",
+    "result": "PASS",
+    "windowTitle": "Kawaikara AI fork",
+    "privateProfileIncluded": false,
+    "checkedAt": "2026-10-09T11:32:58.2708013Z",
+    "profileCreatedOnFirstLaunch": true
   }
 }

@@ -35,6 +35,7 @@ app.whenReady().then(async () => {
         const available = await Promise.race([ready, timedOut]);
         if (timer) clearTimeout(timer);
         log.info('Video component readiness:', available, components.status());
+        await require('./bootstrap.cjs').extensionManager.initialize();
         await initialize();
         if (!splash.isDestroyed()) splash.destroy();
         log.info('Kawaikara AI fork application initialized');

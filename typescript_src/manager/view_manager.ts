@@ -189,6 +189,20 @@ export class KawaiViewManager {
                 }
             }
             global_object.context.current_site_descriptor = sel_desc;
+            // Any Electron webRequest handler can take precedence over Chrome extensions,
+            // even with a narrow filter. Unsubscribe completely outside CoupangPlay.
+            view.webContents.session.webRequest.onBeforeSendHeaders(null);
+            if (sel_desc.id === 'coupangplay') {
+                view.webContents.session.webRequest.onBeforeSendHeaders(
+                    { urls: ['https://*.coupangplay.com/*', 'https://coupangplay.com/*'] },
+                    (details, callback) => {
+                        try {
+                            if (details.webContentsId === view.webContents.id) sel_desc.onBeforeSendHeaders(details);
+                        } catch (error) { log.warn('Service header compatibility failed', error); }
+                        callback({ requestHeaders: details.requestHeaders });
+                    },
+                );
+            }
 
             // await sel_desc?.preload(view, this._createController());
             // console.log('preload ends');

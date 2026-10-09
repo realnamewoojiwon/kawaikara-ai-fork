@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'">
+<title>확장 프로그램 관리 — Kawaikara AI fork</title><link rel="stylesheet" href="extensions.css"></head>
+<body><main>
+<header><div><p class="eyebrow">Kawaikara AI fork</p><h1>확장 프로그램</h1></div><button id="add">확장 폴더 추가</button></header>
+<section class="intro"><h2>원하는 확장을 직접 추가하세요</h2><p>압축을 푼 Chrome 확장 폴더 안의 <b>manifest.json</b> 파일을 확인한 뒤, 그 폴더를 선택하세요. 확장은 앱에 복사되므로 원본 폴더를 옮겨도 사용할 수 있습니다.</p><p>실험적 지원입니다. Chrome 웹 스토어의 바로 설치, 자동 업데이트, 모든 확장의 호환성을 지원하지 않습니다. 탭·버튼 클릭·계정 동기화 기능은 일부 작동하지 않을 수 있습니다.</p><p>확장은 허용된 사이트의 화면과 데이터에 접근할 수 있습니다. 신뢰하는 확장만 추가하세요.</p></section>
+<p id="notice" role="status" aria-live="polite"></p><div id="list"></div>
+<footer>확장을 켜거나 끄거나 다시 불러온 뒤에는 서비스 화면에서 새로고침하세요.<br>확장 파일과 설정은 개인용 data 폴더에 저장됩니다. 친구에게는 배포 ZIP만 공유하세요.</footer>
+</main><script src="extensions.js"></script></body></html>

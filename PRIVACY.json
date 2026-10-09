@@ -1,17 +1,14 @@
 {
   "result": "PASS",
-  "sourceFilesScanned": 143,
-  "appFilesScanned": 93,
+  "sourceFilesScanned": 160,
+  "appFilesScanned": 94,
   "findings": [],
   "packaging": "Explicit file and directory allowlist",
   "excluded": [
-    "Login profiles and cookie databases",
-    "Passwords and authentication tokens",
+    "Login profiles, passwords, cookies and history",
+    "User-installed extensions and extension settings",
     "data/ and external-login/",
-    "Browsing and viewing history",
-    "Logs, caches, and crash dumps",
-    "Environment and certificate files",
-    "Original and local Git metadata",
-    "Personal paths and authenticated screenshots"
+    "Logs, cache, crash dumps and test profiles",
+    "Credentials, environment files, Git metadata, private screenshots and personal paths"
   ]
 }

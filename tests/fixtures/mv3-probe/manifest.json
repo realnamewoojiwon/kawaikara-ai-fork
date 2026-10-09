@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Kawaikara MV3 Compatibility Probe",
+  "version": "1.0.0",
+  "description": "Local release verification fixture. Only operates on example.com.",
+  "permissions": ["storage"],
+  "background": { "service_worker": "worker.js" },
+  "content_scripts": [{
+    "matches": ["https://example.com/*", "file:///*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "action": { "default_popup": "popup.html" },
+  "options_page": "options.html"
+}

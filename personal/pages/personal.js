@@ -24,6 +24,7 @@
     container.append(section);
   }
   document.getElementById('menu').addEventListener('click', () => window.KAWAI_PERSONAL.action('menu').catch(showError));
+  document.getElementById('extensions').addEventListener('click', () => window.KAWAI_PERSONAL.action('extensions').catch(showError));
   const checkStatus = async () => {
     const status = await window.KAWAI_PERSONAL.status();
     const installed = Object.values(status.components).some(c => c.title.includes('Widevine') && c.version);

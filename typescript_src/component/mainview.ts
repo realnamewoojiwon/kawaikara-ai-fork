@@ -69,28 +69,7 @@ export const get_mainview_instance = (): BrowserWindow => {
         require('../bootstrap.cjs').installMainWindow(mainView);
         KawaiViewManager.getInstance().trackBrowserFocus(mainView);
 
-        mainView.webContents.session.webRequest.onBeforeSendHeaders(
-            (details, callback) => {
-                try {
-                    global_object.context?.current_site_descriptor?.onBeforeSendHeaders(details);
-                } catch (error) {
-                    log.error('Request header hook failed', error);
-                }
-                callback({ requestHeaders: details.requestHeaders });
-            },
-        );
-
-        mainView.webContents.session.webRequest.onBeforeRequest(
-            (details, callback) => {
-                let result: { cancel?: boolean; redirectURL?: string } = {};
-                try {
-                    result = global_object.context?.current_site_descriptor?.onBeforeRequest(details) ?? {};
-                } catch (error) {
-                    log.error('Request hook failed', error);
-                }
-                callback(result);
-            },
-        );
+        // Native request compatibility hooks are enabled only while their service is selected.
 
         mainView.setFullScreenable(true);
         setup_pogress_bar(mainView);
